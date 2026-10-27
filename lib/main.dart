@@ -303,7 +303,7 @@ void main() {
                             ), // flutter has monospace only by default
                           ),
                           Text(
-                            'this is size text',
+                            'this is very size text',
                             style: TextStyle(
                               fontSize: 45,
                               color: Colors.white,
