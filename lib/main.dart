@@ -382,7 +382,7 @@ void main() {
                       'this is size text',
                       style: TextStyle(
                         fontSize: 45,
-                        color: Colors.white,
+                        color: const Color.fromARGB(255, 227, 219, 219),
                       ), // want font size 45 px but how?
                     ),
                   ],
