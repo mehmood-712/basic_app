@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
+import 'screens/auth_screen.dart';
+
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
@@ -12,15 +14,17 @@ Future<void> main() async {
   runApp(const MyApp());
 }
 
+// Global Supabase client
 final supabase = Supabase.instance.client;
 
 class MyApp extends StatelessWidget {
-  const new({super.key});
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Scaffold(body: Center(child: Text('Supabase Connected'))),
+      debugShowCheckedModeBanner: false,
+      home: AuthScreen(),
     );
   }
 }
